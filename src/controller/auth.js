@@ -25,7 +25,7 @@ const UsersController = {
       id,
       email: req.body.email,
       password: await argon2.hash(req.body.password),
-      fullname: req.body.name,
+      name: req.body.name,
       otp
     }
 

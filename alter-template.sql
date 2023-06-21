@@ -17,7 +17,7 @@ CREATE TABLE users(
 CREATE Table airlines(
     id SERIAL PRIMARY KEY, 
     airline_name VARCHAR DEFAULT NULL, 
-    airline_logo VARCHAR DEFAULT NULL
+    photo VARCHAR DEFAULT NULL
 );
 
 CREATE TABLE airports(
