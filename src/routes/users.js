@@ -7,7 +7,7 @@ const upload = require("../middleware/uploadPhoto");
 router.get('/', getData)
 router.post('/', postData)
 router.get('/:id', getDetail)
-router.get("/users", protect, getUserByPayloadId);
+router.get("/users/id", protect, getUserByPayloadId);
 router.put("/users", protect, upload.single("photo"), updateDataUser);
 
 
